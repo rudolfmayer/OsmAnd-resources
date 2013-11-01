@@ -358,7 +358,7 @@
 	<category name="leisure" poi_tag="leisure" poi_category="leisure">
 		<type tag="leisure" value="dog_park" minzoom="15" />
 		<type tag="leisure" value="sports_centre" minzoom="13" />
-		<type tag="leisure" value="golf_course" minzoom="12" />
+		<type tag="leisure" value="golf_course" minzoom="12" relation="true" />
 		<type tag="leisure" value="stadium" minzoom="13" />
 		<type tag="leisure" value="track" minzoom="12" />
 		<type tag="leisure" value="pitch" minzoom="12" />
@@ -789,7 +789,7 @@
 		<type tag="sport" value="dog_racing" minzoom="15" />
 		<type tag="sport" value="equestrian" minzoom="15" />
 		<type tag="sport" value="football" minzoom="15" />
-		<type tag="sport" value="golf" minzoom="15" />
+		<type tag="sport" value="golf" minzoom="15" relation="true" />
 		<type tag="sport" value="gymnastics" minzoom="15" />
 		<type tag="sport" value="hockey" minzoom="15" />
 		<type tag="sport" value="horse_racing" minzoom="15" />

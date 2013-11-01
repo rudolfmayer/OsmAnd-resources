@@ -123,7 +123,7 @@
 	</category>
 
 	<category name="smoothness">
-		<type tag="smoothness" value="excellent" minzoom="12" additional="true"/>
+		<type tag="smoothness" value="excelent" minzoom="12" additional="true"/>
 		<type tag="smoothness" value="good" minzoom="12" additional="true"/>
 		<type tag="smoothness" value="intermediate" minzoom="12" additional="true"/>
 		<type tag="smoothness" value="bad" minzoom="12" additional="true"/>
@@ -147,50 +147,7 @@
 		<type tag="osmc_symbol_yellow" nameTags="osmc_symbol_white_yellow_bar_name,osmc_symbol__yellow_diamond_name" value="" minzoom="12"/>
 		<type tag="osmc_symbol_green"  nameTags="osmc_symbol_white_green_bar_name,osmc_symbol_white_green_backslash_name"  value="" minzoom="12"/>
 		<type tag="osmc_symbol_blue"   nameTags="osmc_symbol_white_blue_bar_name"   value="" minzoom="12"/>
-		<type tag="osmc_symbol_black"   nameTags="osmc_symbol_white_black_bar_name"   value="" minzoom="12"/>
 	</category>
-	
-	<!-- For the purpose of rendering the color-coded trails using the tag "colour" or "color", when they are not used tags "osmc_symbol" -->
-	<category name="color_coded">
-		<type tag="color_coded"  value="red" minzoom="8" additional="true"/>
-		<type tag="color"  value="red"      target_tag="color_coded" target_value="red" />
-		<type tag="colour" value="red"      target_tag="color_coded" target_value="red" />
-		<type tag="color"  value="#FF0000"  target_tag="color_coded" target_value="red" />
-		<type tag="colour" value="#FF0000"  target_tag="color_coded" target_value="red" />
-		<type tag="color"  value="#ff0000"  target_tag="color_coded" target_value="red" />
-		<type tag="colour" value="#ff0000"  target_tag="color_coded" target_value="red" />
-		
-		<type tag="color_coded"  value="yellow" minzoom="8" additional="true"/>
-		<type tag="color"  value="yellow"   target_tag="color_coded" target_value="yellow" />
-		<type tag="colour" value="yellow"   target_tag="color_coded" target_value="yellow" />
-		<type tag="color"  value="#FFFF00"  target_tag="color_coded" target_value="yellow" />
-		<type tag="colour" value="#FFFF00"  target_tag="color_coded" target_value="yellow" />
-		<type tag="color"  value="#ffff00"  target_tag="color_coded" target_value="yellow" />
-		<type tag="colour" value="#ffff00"  target_tag="color_coded" target_value="yellow" />
-				
-		<type tag="color_coded"  value="green" minzoom="8" additional="true"/>
-		<type tag="color"  value="green"    target_tag="color_coded" target_value="green" />
-		<type tag="colour" value="green"    target_tag="color_coded" target_value="green" />
-		<type tag="color"  value="#00FF00"  target_tag="color_coded" target_value="green" />
-		<type tag="colour" value="#00FF00"  target_tag="color_coded" target_value="green" />
-		<type tag="color"  value="#00ff00"  target_tag="color_coded" target_value="green" />
-		<type tag="colour" value="#00ff00"  target_tag="color_coded" target_value="green" />
-		
-		<type tag="color_coded"  value="blue" minzoom="8" additional="true"/>
-		<type tag="color"  value="blue"     target_tag="color_coded" target_value="blue" />
-		<type tag="colour" value="blue"     target_tag="color_coded" target_value="blue" />
-		<type tag="color"  value="#0000FF"  target_tag="color_coded" target_value="blue" />
-		<type tag="colour" value="#0000FF"  target_tag="color_coded" target_value="blue" />
-		<type tag="color"  value="#0000ff"  target_tag="color_coded" target_value="blue" />
-		<type tag="colour" value="#0000ff"  target_tag="color_coded" target_value="blue" />
-		
-		<type tag="color_coded"  value="black" minzoom="8" additional="true"/>
-		<type tag="color"  value="black"    target_tag="color_coded" target_value="black" />
-		<type tag="colour" value="black"    target_tag="color_coded" target_value="black" />
-		<type tag="color"  value="#000000"  target_tag="color_coded" target_value="black" />
-		<type tag="colour" value="#000000"  target_tag="color_coded" target_value="black" />
-	</category>
-	
 
 	<category name="cycleway">
 		<type tag="cycleway" value="lane" minzoom="12"/>
@@ -358,7 +315,7 @@
 	<category name="leisure" poi_tag="leisure" poi_category="leisure">
 		<type tag="leisure" value="dog_park" minzoom="15" />
 		<type tag="leisure" value="sports_centre" minzoom="13" />
-		<type tag="leisure" value="golf_course" minzoom="12" />
+		<type tag="leisure" value="golf_course" minzoom="12" relation="true" />
 		<type tag="leisure" value="stadium" minzoom="13" />
 		<type tag="leisure" value="track" minzoom="12" />
 		<type tag="leisure" value="pitch" minzoom="12" />
@@ -716,21 +673,20 @@
 
 	<!-- administrative place-->
 	<category name="administrative" poi_tag="place" poi_category="administrative" >
-		<type tag="place" value="ocean" minzoom="1" point="true"/>
-		<type tag="place" value="continent" minzoom="1"  nameTags="ref,int_ref" point="true"/>
-		<type tag="place" value="country" minzoom="2"  nameTags="ref,int_ref" point="true"/>
-		<type tag="place" value="state" minzoom="3" nameTags="ref,int_ref"  point="true"/>
-		<type tag="place" value="region" minzoom="4"  nameTags="ref,int_ref" point="true"/>
-		<type tag="place" value="sea" minzoom="3" point="true"/>
-		<type tag="place" value="county" minzoom="4"  nameTags="ref,int_ref" point="true"/>
-		<type tag="osmand_place_basemap" value="city" minzoom="4" point="true"/>
-		<type tag="place" value="city" minzoom="6" point="true"/>
-		<type tag="place" value="town" minzoom="6" point="true"/>
-		<type tag="place" value="village" minzoom="10" />
-		<type tag="place" value="hamlet" minzoom="10" />
-		<type tag="place" value="suburb" minzoom="10" point="true"/>
-		<type tag="place" value="locality" minzoom="10" />
-		<type tag="place" value="island" minzoom="10" />
+		<type tag="place" value="ocean" minzoom="1" />
+		<type tag="place" value="continent" minzoom="1"  nameTags="ref,name:en,int_ref"/>
+		<type tag="place" value="country" minzoom="2"  nameTags="ref,name:en,int_ref"/>
+		<type tag="place" value="state" minzoom="3" nameTags="ref,name:en,int_ref"  />
+		<type tag="place" value="region" minzoom="4"  nameTags="ref,name:en,int_ref" />
+		<type tag="place" value="sea" minzoom="3" nameTags="name:en"/>
+		<type tag="place" value="county" minzoom="4"  nameTags="ref,name:en,int_ref"/>
+		<type tag="place" value="city" minzoom="4" nameTags="name:en"/>
+		<type tag="place" value="town" minzoom="6" nameTags="name:en"/>
+		<type tag="place" value="village" minzoom="10" nameTags="name:en"/>
+		<type tag="place" value="hamlet" minzoom="10" nameTags="name:en"/>
+		<type tag="place" value="suburb" minzoom="10" nameTags="name:en"/>
+		<type tag="place" value="locality" minzoom="10" nameTags="name:en"/>
+		<type tag="place" value="island" minzoom="10" nameTags="name:en"/>
 		<type tag="osmand_region" value="yes" minzoom="5" nameTags="download_name,region_prefix,region_suffix" />
 	</category>
 	
@@ -789,7 +745,7 @@
 		<type tag="sport" value="dog_racing" minzoom="15" />
 		<type tag="sport" value="equestrian" minzoom="15" />
 		<type tag="sport" value="football" minzoom="15" />
-		<type tag="sport" value="golf" minzoom="15" />
+		<type tag="sport" value="golf" minzoom="15" relation="true" />
 		<type tag="sport" value="gymnastics" minzoom="15" />
 		<type tag="sport" value="hockey" minzoom="15" />
 		<type tag="sport" value="horse_racing" minzoom="15" />
@@ -862,8 +818,6 @@
 		<routing_type tag="maxspeed" value="RO:motorway" tag2="maxspeed" value2="130" mode="replace" base="true"/>
 		<routing_type tag="maxspeed" value="RU:rural" tag2="maxspeed" value2="90" mode="replace" base="true"/>
 		<routing_type tag="maxspeed" value="RU:urban" tag2="maxspeed" value2="60" mode="replace" base="true"/>
-		<routing_type tag="maxspeed" value="CZ:urban" tag2="maxspeed" value2="50" mode="replace" base="true"/>
-				
 		
 		<routing_type tag="access" mode="amend"/>
 		<!-- tag used as start with -->
